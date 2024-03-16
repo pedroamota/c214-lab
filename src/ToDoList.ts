@@ -1,4 +1,4 @@
-type Task = {
+export type Task = {
     title: string,
     description: string,
     targetDate: string,
@@ -13,4 +13,8 @@ export class TodoList{
     add(task: Task){
         this.tasks.push(task)
     }
+    getTasks () {
+        return this.tasks
+      }
+
 }
