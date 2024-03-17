@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { TodoList } from "./ToDoList"
+import { ToDoList } from "./ToDoList"
 
 const anyTask = {
   title: 'any_title',
@@ -13,14 +13,14 @@ const anyTask = {
 describe('ToDoList', () => {
   describe('Testing add', () => {
     test('should add a new task to the list', () => {
-      const todoInstance = new TodoList()
+      const todoInstance = new ToDoList()
       todoInstance.add(anyTask)
       const tasks = todoInstance.getTasks()
       expect(tasks).toEqual([anyTask])
     })
 
     test('should add a valid tasks', () => {
-      const todoInstance = new TodoList()
+      const todoInstance = new ToDoList()
       const invalidValue: any = {
         invalidField: 'invalidValue'
       }
