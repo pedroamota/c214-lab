@@ -1,4 +1,4 @@
-class Moeda {
+export class Moeda {
     private _nome: string;
     private _valor: number;
 
@@ -6,7 +6,7 @@ class Moeda {
         this._nome = nome;
         this._valor = valor;
     }
-    
+
     get nome(): string {
         return this._nome;
     }
