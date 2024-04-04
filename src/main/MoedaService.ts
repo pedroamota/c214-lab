@@ -1,5 +1,6 @@
-interface MoedaService {
-    converter(moeda1: string, moeda2: string): number;
-    buscar(moeda: string): number;
-  }
+import { Moeda } from './Moeda.js';
+
+ export interface MoedaService {
+    buscar(moeda: string): string;
+}
   
