@@ -1,7 +1,7 @@
 import { Moeda } from './Moeda.js';
 import { MoedaService } from './MoedaService';
 
-class BuscaInimigo {
+class ConverteMoeda {
     moedaService: MoedaService;
 
     constructor(service: MoedaService) {
@@ -19,7 +19,7 @@ class BuscaInimigo {
         );
     }
 
-    converteMoedas(nomeMoeda1: string, nomeMoeda2: string, valorMoeda1: number): number {
+    conversor(nomeMoeda1: string, nomeMoeda2: string, valorMoeda1: number): number {
         const moeda1 = this.buscaMoeda(nomeMoeda1);
         const moeda2 = this.buscaMoeda(nomeMoeda2);
 
