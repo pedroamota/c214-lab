@@ -1,7 +1,7 @@
 import { Moeda } from './Moeda.js';
 import { MoedaService } from './MoedaService';
 
-class ConverteMoeda {
+export class ConverteMoeda {
     moedaService: MoedaService;
 
     constructor(service: MoedaService) {
