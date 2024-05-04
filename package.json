@@ -4,7 +4,8 @@
   "description": "C214",
   "main": "index.js",
   "scripts": {
-    "test": "jest src/tests"
+    "test": "jest src/tests",
+    "build": "tsc"  
   },
   "keywords": [],
   "author": "",
