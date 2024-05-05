@@ -1,4 +1,4 @@
-import { Moeda } from './Moeda.js';
+import { Moeda } from './Moedas.js';
 import { MoedaService } from './MoedaService';
 
 export class ConverteMoeda {
