@@ -1,6 +1,5 @@
 import { ConverteMoeda } from '../main/ConverteMoeda'; 
-import { Moeda } from '../main/Moeda'; 
-import { MoedaService } from '../main/MoedaService'; 
+import { MoedaServiceImpl } from './MoedaServiceIpm'; 
 
 jest.mock('../main/MoedaService', () => {
     return {
@@ -25,7 +24,7 @@ describe('ConverteMoeda', () => {
     let converteMoeda: ConverteMoeda;
 
     beforeEach(() => {
-        converteMoeda = new ConverteMoeda(new MoedaService());
+        converteMoeda = new ConverteMoeda(new MoedaServiceImpl());
     });
 
     test('buscaMoeda deve retornar uma instância de Moeda corretamente', () => {
